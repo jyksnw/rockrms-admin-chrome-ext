@@ -1,0 +1,17 @@
+{
+    "name": "RockRMS Admin",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "A RockRMS extension to help with administoring RockRMS",
+    "browser_action": {
+      "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["lib/jquery.min.js","content-scripts/content.js"]
+      }
+    ]
+  }
