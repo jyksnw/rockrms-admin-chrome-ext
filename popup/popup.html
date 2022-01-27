@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <style>
-    body {
-      width: 500px;
-    }
+      .popup-buttons {
+        padding: 10px;
+        margin: 10px;
+      }
 
-    button {
-      background-color: rgba(238,119,37,0.6);
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      font-size: 16px;
-    }
-  </style>
-</head>
+      button {
+        width: 100%;
+        margin: 10px 0;
+        background-color: rgb(238, 119, 37);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+      }
 
-<body>
-  <h1>RockRMS Administration</h1>
-  <h2>Select an option:</h2>
-  <button id="pageZones">Zones</button>
-  <button id="blockConfig">Block</button>
-  <button id="resizeCodeEditor800">800</button>
-  <button id="resizeCodeEditor1200">1200</button>
-  
-  <script src="popup.js"></script>
-</body>
+      #pageZones,
+      #blockConfig {
+        background-color: rgb(246, 152, 36);
+      }
+    </style>
+  </head>
 
+  <body>
+    <div class="popup-buttons">
+      <h2>Rock Hacks</h2>
+      <h4>Block Edits</h4>
+      <button id="pageZones">Zones</button>
+      <button id="blockConfig">Block</button>
+      <h4>Editor Height</h4>
+      <button id="resizeCodeEditor800">800</button>
+      <button id="resizeCodeEditor1200">1200</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>
